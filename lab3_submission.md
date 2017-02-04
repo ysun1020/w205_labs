@@ -19,7 +19,7 @@ SELECT ui.location, COUNT(DISTINCT wb.user_id) AS log_count
 	ON wb.user_id = ui.user_id
 	GROUP BY ui.location
 	ORDER BY log_count DESC 
-	LIMIT 5
+	LIMIT 5;
 ```
 Top 5 locations are: 
 
